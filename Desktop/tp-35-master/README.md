@@ -13,9 +13,9 @@ Laboratórios de Informática
 
 ## organização IPCA 2024/2025
 
-[src/](./src/)  Código da solução desenvolvida 
+[src/](./src/)  Código da solução desenvolvido.
 
-[doxdoc/](./doxdoc/)  documentação com o relatórioi gerado pela ferramenta Doxygen
+[doxdoc/](./doxdoc/)  documentação com o relatório gerado pela ferramenta Doxygen.
 
-[doc/](./doc/)  documentação com o relatório
+[doc/](./doc/)  documentação com o relatório.
 
