@@ -1,0 +1,162 @@
+\begin{theindex}
+
+  \item {caloriasCarne}
+    \subitem {Ementa}, 5
+  \item {caloriasDieta}
+    \subitem {Ementa}, 5
+  \item {caloriasPeixe}
+    \subitem {Ementa}, 6
+  \item {caloriasVegetariano}
+    \subitem {Ementa}, 6
+
+  \indexspace
+
+  \item {data}
+    \subitem {Ementa}, 6
+  \item {dia}
+    \subitem {Ementa}, 6
+    \subitem {Escolha}, 7
+
+  \indexspace
+
+  \item {Ementa}, 5
+    \subitem {caloriasCarne}, 5
+    \subitem {caloriasDieta}, 5
+    \subitem {caloriasPeixe}, 6
+    \subitem {caloriasVegetariano}, 6
+    \subitem {data}, 6
+    \subitem {dia}, 6
+    \subitem {pratoCarne}, 6
+    \subitem {pratoDieta}, 6
+    \subitem {pratoPeixe}, 7
+    \subitem {pratoVegetariano}, 7
+  \item {ementas}
+    \subitem {main.c}, 18
+  \item {Escolha}, 7
+    \subitem {dia}, 7
+    \subitem {idFuncionario}, 8
+    \subitem {tipoPrato}, 8
+  \item {escolhas}
+    \subitem {main.c}, 18
+
+  \indexspace
+
+  \item {ficheiros.c}
+    \subitem {gravarFuncionarios}, 12
+    \subitem {lerEmenta}, 12
+    \subitem {lerEscolhas}, 13
+    \subitem {lerFuncionarios}, 13
+  \item {Funcionario}, 8
+    \subitem {id}, 9
+    \subitem {nif}, 9
+    \subitem {nome}, 9
+    \subitem {telefone}, 9
+  \item {funcionarios}
+    \subitem {main.c}, 19
+
+  \indexspace
+
+  \item {gravarEmenta}
+    \subitem {Header.h}, 14
+  \item {gravarEscolhas}
+    \subitem {Header.h}, 14
+  \item {gravarFuncionarios}
+    \subitem {ficheiros.c}, 12
+    \subitem {Header.h}, 14
+
+  \indexspace
+
+  \item {Header.h}
+    \subitem {gravarEmenta}, 14
+    \subitem {gravarEscolhas}, 14
+    \subitem {gravarFuncionarios}, 14
+    \subitem {lerEmenta}, 15
+    \subitem {lerEscolhas}, 15
+    \subitem {lerFuncionarios}, 16
+    \subitem {mostrarEmentas}, 16
+    \subitem {mostrarEscolhas}, 16
+    \subitem {mostrarFuncionarios}, 16
+    \subitem {RefeicoesPorDia}, 17
+
+  \indexspace
+
+  \item {id}
+    \subitem {Funcionario}, 9
+  \item {idFuncionario}
+    \subitem {Escolha}, 8
+
+  \indexspace
+
+  \item {lerEmenta}
+    \subitem {ficheiros.c}, 12
+    \subitem {Header.h}, 15
+  \item {lerEscolhas}
+    \subitem {ficheiros.c}, 13
+    \subitem {Header.h}, 15
+  \item {lerFuncionarios}
+    \subitem {ficheiros.c}, 13
+    \subitem {Header.h}, 16
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.c}, 18
+  \item {main.c}
+    \subitem {ementas}, 18
+    \subitem {escolhas}, 18
+    \subitem {funcionarios}, 19
+    \subitem {main}, 18
+  \item {mostrar\_dados.c}
+    \subitem {mostrarEmentas}, 19
+    \subitem {mostrarEscolhas}, 19
+    \subitem {mostrarFuncionarios}, 20
+    \subitem {RefeicoesPorDia}, 20
+  \item {mostrarEmentas}
+    \subitem {Header.h}, 16
+    \subitem {mostrar\_dados.c}, 19
+  \item {mostrarEscolhas}
+    \subitem {Header.h}, 16
+    \subitem {mostrar\_dados.c}, 19
+  \item {mostrarFuncionarios}
+    \subitem {Header.h}, 16
+    \subitem {mostrar\_dados.c}, 20
+
+  \indexspace
+
+  \item {nif}
+    \subitem {Funcionario}, 9
+  \item {nome}
+    \subitem {Funcionario}, 9
+
+  \indexspace
+
+  \item {pratoCarne}
+    \subitem {Ementa}, 6
+  \item {pratoDieta}
+    \subitem {Ementa}, 6
+  \item {pratoPeixe}
+    \subitem {Ementa}, 7
+  \item {pratoVegetariano}
+    \subitem {Ementa}, 7
+
+  \indexspace
+
+  \item {RefeicoesPorDia}
+    \subitem {Header.h}, 17
+    \subitem {mostrar\_dados.c}, 20
+
+  \indexspace
+
+  \item {src/ficheiros.c}, 11
+  \item {src/Header.h}, 14
+  \item {src/main.c}, 17
+  \item {src/mostrar\_dados.c}, 19
+
+  \indexspace
+
+  \item {telefone}
+    \subitem {Funcionario}, 9
+  \item {tipoPrato}
+    \subitem {Escolha}, 8
+
+\end{theindex}

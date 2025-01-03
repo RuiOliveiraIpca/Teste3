@@ -1,0 +1,5 @@
+2feira;18.11.2024;Pescada cozida com batatas;180;Estufado de vitela;330;Frango grelhado;250;Tofu grelhado;220
+3feira;19.11.2024;Salmão grelhado;200;Bife de peru;300;Sopa de legumes;150;Hambúrguer vegetariano;240
+4feira;20.11.2024;Filetes de pescada;190;Carne assada;320;Peito de peru grelhado;230;Lasanha vegetariana;270
+5feira;21.11.2024;Bacalhau à Brás;210;Almôndegas de carne;340;Omelete de claras;180;Quinoa com legumes;250
+6feira;22.11.2024;Dourada assada;220;Costeletas de porco;360;Legumes salteados;170;Curry de grão de bico;260

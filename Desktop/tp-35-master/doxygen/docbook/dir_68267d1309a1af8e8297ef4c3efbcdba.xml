@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_68267d1309a1af8e8297ef4c3efbcdba" xml:lang="en-US">
+<title>src Directory Reference</title>
+<indexterm><primary>src Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_ficheiros_8c">ficheiros.c</link></para>
+
+<para>Implementação de funções para manipulação de ficheiros de dados. </para>
+</listitem>
+            <listitem><para>file <link linkend="__header_8h">Header.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_main_8c">main.c</link></para>
+
+<para>Programa principal para gestão de funcionários, ementas e escolhas no espaço social. </para>
+</listitem>
+            <listitem><para>file <link linkend="_mostrar__dados_8c">mostrar_dados.c</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__exemplo-example" xml:lang="en-US">
+<title>Exemplo</title>
+
+<para>Lê os dados de funcionários a partir de um ficheiro.Esta função lê os dados de um ficheiro com formato: <literallayout><computeroutput>id;nome;nif;telefone
+</computeroutput></literallayout> e preenche um array de estruturas do tipo <computeroutput><link linkend="_struct_funcionario">Funcionario</link></computeroutput>.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>filename</entry>
+                                <entry>
+<para>Caminho do ficheiro a ser lido. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>funcionarios</entry>
+                                <entry>
+<para>Array de estruturas para armazenar os dados. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>maxFuncionarios</entry>
+                                <entry>
+<para>Número máximo de funcionários que podem ser armazenados no array. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>int Número de funcionários lidos com sucesso ou -1 em caso de erro.</para>
+</formalpara>
+de uso: <literallayout><computeroutput>Funcionario&#32;funcionarios[100];
+int&#32;numFuncionarios&#32;=&#32;lerFuncionarios(&quot;funcionarios.txt&quot;,&#32;funcionarios,&#32;100);
+if&#32;(numFuncionarios&#32;==&#32;-1)&#32;{
+&#32;&#32;&#32;&#32;printf(&quot;Erro&#32;ao&#32;carregar&#32;os&#32;funcionários.\n&quot;);
+}
+</computeroutput></literallayout></para>
+
+<para><literallayout><computeroutput></computeroutput></literallayout> </para>
+</section>

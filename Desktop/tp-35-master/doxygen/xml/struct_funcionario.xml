@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_funcionario" kind="struct" language="C++" prot="public">
+    <compoundname>Funcionario</compoundname>
+    <includes refid="_header_8h" local="no">Header.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_funcionario_1a7441ef0865bcb3db9b8064dd7375c1ea" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Header.h" line="6" column="9" bodyfile="src/Header.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_funcionario_1aa4e90ca99702bac9e1c78503ad86acba" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char nome[100]</definition>
+        <argsstring>[100]</argsstring>
+        <name>nome</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Header.h" line="7" column="10" bodyfile="src/Header.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_funcionario_1a2675bd15b21381746dad2f447e841be8" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char nif[10]</definition>
+        <argsstring>[10]</argsstring>
+        <name>nif</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Header.h" line="8" column="10" bodyfile="src/Header.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_funcionario_1a2b3e6e14a2f6909a2d7c095c16a343c8" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char telefone[10]</definition>
+        <argsstring>[10]</argsstring>
+        <name>telefone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Header.h" line="9" column="10" bodyfile="src/Header.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Header.h" line="5" column="1" bodyfile="src/Header.h" bodystart="5" bodyend="10"/>
+    <listofallmembers>
+      <member refid="struct_funcionario_1a7441ef0865bcb3db9b8064dd7375c1ea" prot="public" virt="non-virtual"><scope>Funcionario</scope><name>id</name></member>
+      <member refid="struct_funcionario_1a2675bd15b21381746dad2f447e841be8" prot="public" virt="non-virtual"><scope>Funcionario</scope><name>nif</name></member>
+      <member refid="struct_funcionario_1aa4e90ca99702bac9e1c78503ad86acba" prot="public" virt="non-virtual"><scope>Funcionario</scope><name>nome</name></member>
+      <member refid="struct_funcionario_1a2b3e6e14a2f6909a2d7c095c16a343c8" prot="public" virt="non-virtual"><scope>Funcionario</scope><name>telefone</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

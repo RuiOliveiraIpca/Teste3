@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_ficheiros_8c" xml:lang="en-US">
+<title>src/ficheiros.c File Reference</title>
+<indexterm><primary>src/ficheiros.c</primary></indexterm>
+<para>
+
+<para>Implementação de funções para manipulação de ficheiros de dados. </para>
+ 
+</para>
+<programlisting>#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+#include &quot;Header.h&quot;
+</programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_ficheiros_8c_1ac19dad6b6e1bc4bf120a79d68b086b56">lerFuncionarios</link> (const char *filename, <link linkend="_struct_funcionario">Funcionario</link> <link linkend="_main_8c_1adf03e8003bc467ef3b754ce4db3fdbf3">funcionarios</link>[], int maxFuncionarios)</para>
+</listitem>
+            <listitem><para>int <link linkend="_ficheiros_8c_1a2d7e43e4010eb8e488e346cb7b523ebc">lerEmenta</link> (const char *filename, <link linkend="_struct_ementa">Ementa</link> <link linkend="_main_8c_1a19322fa92e3d2b9691bd4cc3d0bde4ce">ementas</link>[], int maxEmentas)</para>
+
+<para>Lê os dados das ementas a partir de um ficheiro. </para>
+</listitem>
+            <listitem><para>int <link linkend="_ficheiros_8c_1a5e09c7e7744a4d7814172ada6a316eaf">lerEscolhas</link> (const char *filename, <link linkend="_struct_escolha">Escolha</link> <link linkend="_main_8c_1ae0835e681bb09045b60cbc8a03cf5c91">escolhas</link>[], int maxEscolhas)</para>
+
+<para>Lê as escolhas dos utentes a partir de um ficheiro. </para>
+</listitem>
+            <listitem><para>int <link linkend="_ficheiros_8c_1adf556d6f39c5f3cf6445315826c9d795">gravarFuncionarios</link> (const char *filename, const <link linkend="_struct_funcionario">Funcionario</link> <link linkend="_main_8c_1adf03e8003bc467ef3b754ce4db3fdbf3">funcionarios</link>[], int numFuncionarios)</para>
+
+<para>Grava os dados dos funcionários em um ficheiro. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Implementação de funções para manipulação de ficheiros de dados. </para>
+
+<para>Este arquivo contém as funções para ler e gravar dados em ficheiros de texto relacionados a funcionários, ementas e escolhas de um sistema de gestão.</para>
+
+<para>Cada função lida com formatos específicos de ficheiros, organizados por linhas separadas por <computeroutput>;</computeroutput>.</para>
+
+<para><formalpara><title>Author</title>
+
+<para>[Seu Nome] </para>
+</formalpara>
+<formalpara><title>Date</title>
+
+<para>[Data Atual] </para>
+</formalpara>
+</para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_ficheiros_8c_1adf556d6f39c5f3cf6445315826c9d795"/>    <section>
+    <title>gravarFuncionarios()</title>
+<indexterm><primary>gravarFuncionarios</primary><secondary>ficheiros.c</secondary></indexterm>
+<indexterm><primary>ficheiros.c</primary><secondary>gravarFuncionarios</secondary></indexterm>
+<para><computeroutput>int gravarFuncionarios (const char * filename, const <link linkend="_struct_funcionario">Funcionario</link> funcionarios[], int numFuncionarios)</computeroutput></para><para>
+
+<para>Grava os dados dos funcionários em um ficheiro. </para>
+</para>
+
+<para>Escreve o conteúdo de um array de estruturas do tipo <computeroutput><link linkend="_struct_funcionario">Funcionario</link></computeroutput> em um ficheiro com formato: <literallayout><computeroutput>id;nome;nif;telefone
+</computeroutput></literallayout></para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>filename</entry>
+                                <entry>
+<para>Caminho do ficheiro onde os dados serão gravados. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>funcionarios</entry>
+                                <entry>
+<para>Array de estruturas contendo os dados a serem gravados. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>numFuncionarios</entry>
+                                <entry>
+<para>Número de funcionários no array. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>int Retorna 0 em caso de sucesso ou -1 em caso de erro. </para>
+</formalpara>
+</para>
+<para>
+Definition at line 145 of file ficheiros.c.</para>
+    </section><anchor xml:id="_ficheiros_8c_1a2d7e43e4010eb8e488e346cb7b523ebc"/>    <section>
+    <title>lerEmenta()</title>
+<indexterm><primary>lerEmenta</primary><secondary>ficheiros.c</secondary></indexterm>
+<indexterm><primary>ficheiros.c</primary><secondary>lerEmenta</secondary></indexterm>
+<para><computeroutput>int lerEmenta (const char * filename, <link linkend="_struct_ementa">Ementa</link> ementas[], int maxEmentas)</computeroutput></para><para>
+
+<para>Lê os dados das ementas a partir de um ficheiro. </para>
+</para>
+
+<para>Esta função lê um ficheiro com formato: <literallayout><computeroutput>dia;data;pratoPeixe;caloriasPeixe;pratoCarne;caloriasCarne;pratoDieta;caloriasDieta;pratoVegetariano;caloriasVegetariano
+</computeroutput></literallayout> e preenche um array de estruturas do tipo <computeroutput><link linkend="_struct_ementa">Ementa</link></computeroutput>.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>filename</entry>
+                                <entry>
+<para>Caminho do ficheiro a ser lido. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>ementas</entry>
+                                <entry>
+<para>Array de estruturas para armazenar os dados. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>maxEmentas</entry>
+                                <entry>
+<para>Número máximo de ementas que podem ser armazenadas no array. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>int Número de ementas lidas com sucesso ou -1 em caso de erro. </para>
+</formalpara>
+</para>
+<para>
+Definition at line 76 of file ficheiros.c.</para>
+    </section><anchor xml:id="_ficheiros_8c_1a5e09c7e7744a4d7814172ada6a316eaf"/>    <section>
+    <title>lerEscolhas()</title>
+<indexterm><primary>lerEscolhas</primary><secondary>ficheiros.c</secondary></indexterm>
+<indexterm><primary>ficheiros.c</primary><secondary>lerEscolhas</secondary></indexterm>
+<para><computeroutput>int lerEscolhas (const char * filename, <link linkend="_struct_escolha">Escolha</link> escolhas[], int maxEscolhas)</computeroutput></para><para>
+
+<para>Lê as escolhas dos utentes a partir de um ficheiro. </para>
+</para>
+
+<para>Esta função lê um ficheiro com formato: <literallayout><computeroutput>dia;idFuncionario;tipoPrato
+</computeroutput></literallayout> e preenche um array de estruturas do tipo <computeroutput><link linkend="_struct_escolha">Escolha</link></computeroutput>.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>filename</entry>
+                                <entry>
+<para>Caminho do ficheiro a ser lido. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>escolhas</entry>
+                                <entry>
+<para>Array de estruturas para armazenar os dados. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>maxEscolhas</entry>
+                                <entry>
+<para>Número máximo de escolhas que podem ser armazenadas no array. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>int Número de escolhas lidas com sucesso ou -1 em caso de erro. </para>
+</formalpara>
+</para>
+<para>
+Definition at line 112 of file ficheiros.c.</para>
+    </section><anchor xml:id="_ficheiros_8c_1ac19dad6b6e1bc4bf120a79d68b086b56"/>    <section>
+    <title>lerFuncionarios()</title>
+<indexterm><primary>lerFuncionarios</primary><secondary>ficheiros.c</secondary></indexterm>
+<indexterm><primary>ficheiros.c</primary><secondary>lerFuncionarios</secondary></indexterm>
+<para><computeroutput>int lerFuncionarios (const char * filename, <link linkend="_struct_funcionario">Funcionario</link> funcionarios[], int maxFuncionarios)</computeroutput></para><simplesect><title>Examples</title><link linkend="__exemplo-example">Exemplo</link>.</simplesect>
+<para>
+Definition at line 43 of file ficheiros.c.</para>
+</section>
+</section>
+</section>

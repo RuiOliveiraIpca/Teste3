@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ficheiros_8c" kind="file" language="C++">
+    <compoundname>ficheiros.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <includes refid="_header_8h" local="yes">Header.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5">
+        <label>Header.h</label>
+        <link refid="_header_8h"/>
+      </node>
+      <node id="4">
+        <label>string.h</label>
+      </node>
+      <node id="1">
+        <label>src/ficheiros.c</label>
+        <link refid="ficheiros_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ficheiros_8c_1ac19dad6b6e1bc4bf120a79d68b086b56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lerFuncionarios</definition>
+        <argsstring>(const char *filename, Funcionario funcionarios[], int maxFuncionarios)</argsstring>
+        <name>lerFuncionarios</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_funcionario" kindref="compound">Funcionario</ref></type>
+          <declname>funcionarios</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxFuncionarios</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ficheiros.c" line="43" column="5" bodyfile="src/ficheiros.c" bodystart="43" bodyend="60"/>
+        <references refid="main_8c_1adf03e8003bc467ef3b754ce4db3fdbf3" compoundref="main_8c" startline="20">funcionarios</references>
+        <referencedby refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8c" startline="48" endline="88">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="ficheiros_8c_1a2d7e43e4010eb8e488e346cb7b523ebc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lerEmenta</definition>
+        <argsstring>(const char *filename, Ementa ementas[], int maxEmentas)</argsstring>
+        <name>lerEmenta</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_ementa" kindref="compound">Ementa</ref></type>
+          <declname>ementas</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxEmentas</declname>
+        </param>
+        <briefdescription>
+<para>Lê os dados das ementas a partir de um ficheiro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Esta função lê um ficheiro com formato: <programlisting><codeline><highlight class="normal">dia;data;pratoPeixe;caloriasPeixe;pratoCarne;caloriasCarne;pratoDieta;caloriasDieta;pratoVegetariano;caloriasVegetariano</highlight></codeline>
+</programlisting> e preenche um array de estruturas do tipo <computeroutput><ref refid="struct_ementa" kindref="compound">Ementa</ref></computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Caminho do ficheiro a ser lido. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ementas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array de estruturas para armazenar os dados. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxEmentas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Número máximo de ementas que podem ser armazenadas no array. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int Número de ementas lidas com sucesso ou -1 em caso de erro. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ficheiros.c" line="76" column="5" bodyfile="src/ficheiros.c" bodystart="76" bodyend="96"/>
+        <references refid="main_8c_1a19322fa92e3d2b9691bd4cc3d0bde4ce" compoundref="main_8c" startline="23">ementas</references>
+        <referencedby refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8c" startline="48" endline="88">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="ficheiros_8c_1a5e09c7e7744a4d7814172ada6a316eaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lerEscolhas</definition>
+        <argsstring>(const char *filename, Escolha escolhas[], int maxEscolhas)</argsstring>
+        <name>lerEscolhas</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_escolha" kindref="compound">Escolha</ref></type>
+          <declname>escolhas</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxEscolhas</declname>
+        </param>
+        <briefdescription>
+<para>Lê as escolhas dos utentes a partir de um ficheiro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Esta função lê um ficheiro com formato: <programlisting><codeline><highlight class="normal">dia;idFuncionario;tipoPrato</highlight></codeline>
+</programlisting> e preenche um array de estruturas do tipo <computeroutput><ref refid="struct_escolha" kindref="compound">Escolha</ref></computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Caminho do ficheiro a ser lido. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>escolhas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array de estruturas para armazenar os dados. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxEscolhas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Número máximo de escolhas que podem ser armazenadas no array. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int Número de escolhas lidas com sucesso ou -1 em caso de erro. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ficheiros.c" line="112" column="5" bodyfile="src/ficheiros.c" bodystart="112" bodyend="129"/>
+        <references refid="main_8c_1ae0835e681bb09045b60cbc8a03cf5c91" compoundref="main_8c" startline="26">escolhas</references>
+        <referencedby refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8c" startline="48" endline="88">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="ficheiros_8c_1adf556d6f39c5f3cf6445315826c9d795" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gravarFuncionarios</definition>
+        <argsstring>(const char *filename, const Funcionario funcionarios[], int numFuncionarios)</argsstring>
+        <name>gravarFuncionarios</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_funcionario" kindref="compound">Funcionario</ref></type>
+          <declname>funcionarios</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numFuncionarios</declname>
+        </param>
+        <briefdescription>
+<para>Grava os dados dos funcionários em um ficheiro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Escreve o conteúdo de um array de estruturas do tipo <computeroutput><ref refid="struct_funcionario" kindref="compound">Funcionario</ref></computeroutput> em um ficheiro com formato: <programlisting><codeline><highlight class="normal">id;nome;nif;telefone</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Caminho do ficheiro onde os dados serão gravados. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>funcionarios</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array de estruturas contendo os dados a serem gravados. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numFuncionarios</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Número de funcionários no array. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int Retorna 0 em caso de sucesso ou -1 em caso de erro. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ficheiros.c" line="145" column="5" bodyfile="src/ficheiros.c" bodystart="145" bodyend="159"/>
+        <references refid="main_8c_1adf03e8003bc467ef3b754ce4db3fdbf3" compoundref="main_8c" startline="20">funcionarios</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Implementação de funções para manipulação de ficheiros de dados. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Este arquivo contém as funções para ler e gravar dados em ficheiros de texto relacionados a funcionários, ementas e escolhas de um sistema de gestão.</para>
+<para>Cada função lida com formatos específicos de ficheiros, organizados por linhas separadas por <computeroutput>;</computeroutput>.</para>
+<para><simplesect kind="author"><para>[Seu Nome] </para>
+</simplesect>
+<simplesect kind="date"><para>[Data Atual] </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_header_8h" kindref="compound">Header.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="ficheiros_8c_1ac19dad6b6e1bc4bf120a79d68b086b56" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ficheiros_8c_1ac19dad6b6e1bc4bf120a79d68b086b56" kindref="member">lerFuncionarios</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/><ref refid="struct_funcionario" kindref="compound">Funcionario</ref><sp/><ref refid="main_8c_1adf03e8003bc467ef3b754ce4db3fdbf3" kindref="member">funcionarios</ref>[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxFuncionarios)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>FILE<sp/>*file<sp/>=<sp/>fopen(filename,<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!file)<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>perror(</highlight><highlight class="stringliteral">&quot;Erro<sp/>ao<sp/>abrir<sp/>o<sp/>ficheiro<sp/>de<sp/>funcionários&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(count<sp/>&lt;<sp/>maxFuncionarios<sp/>&amp;&amp;<sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fscanf(file,<sp/></highlight><highlight class="stringliteral">&quot;%d;%99[^;];%9[^;];%9s\n&quot;</highlight><highlight class="normal">,<sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;<ref refid="main_8c_1adf03e8003bc467ef3b754ce4db3fdbf3" kindref="member">funcionarios</ref>[count].</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="main_8c_1adf03e8003bc467ef3b754ce4db3fdbf3" kindref="member">funcionarios</ref>[count].nome,<sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8c_1adf03e8003bc467ef3b754ce4db3fdbf3" kindref="member">funcionarios</ref>[count].nif,<sp/><ref refid="main_8c_1adf03e8003bc467ef3b754ce4db3fdbf3" kindref="member">funcionarios</ref>[count].telefone)<sp/>==<sp/>4)<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count++;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>fclose(file);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>count;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="ficheiros_8c_1a2d7e43e4010eb8e488e346cb7b523ebc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ficheiros_8c_1a2d7e43e4010eb8e488e346cb7b523ebc" kindref="member">lerEmenta</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/><ref refid="struct_ementa" kindref="compound">Ementa</ref><sp/><ref refid="main_8c_1a19322fa92e3d2b9691bd4cc3d0bde4ce" kindref="member">ementas</ref>[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxEmentas)<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>FILE<sp/>*file<sp/>=<sp/>fopen(filename,<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!file)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>perror(</highlight><highlight class="stringliteral">&quot;Erro<sp/>ao<sp/>abrir<sp/>o<sp/>ficheiro<sp/>de<sp/>ementas&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(count<sp/>&lt;<sp/>maxEmentas<sp/>&amp;&amp;<sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fscanf(file,<sp/></highlight><highlight class="stringliteral">&quot;%9[^;];%10[^;];%99[^;];%d;%99[^;];%d;%99[^;];%d;%99[^;];%d\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8c_1a19322fa92e3d2b9691bd4cc3d0bde4ce" kindref="member">ementas</ref>[count].dia,<sp/><ref refid="main_8c_1a19322fa92e3d2b9691bd4cc3d0bde4ce" kindref="member">ementas</ref>[count].data,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8c_1a19322fa92e3d2b9691bd4cc3d0bde4ce" kindref="member">ementas</ref>[count].pratoPeixe,<sp/>&amp;<ref refid="main_8c_1a19322fa92e3d2b9691bd4cc3d0bde4ce" kindref="member">ementas</ref>[count].caloriasPeixe,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8c_1a19322fa92e3d2b9691bd4cc3d0bde4ce" kindref="member">ementas</ref>[count].pratoCarne,<sp/>&amp;<ref refid="main_8c_1a19322fa92e3d2b9691bd4cc3d0bde4ce" kindref="member">ementas</ref>[count].caloriasCarne,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8c_1a19322fa92e3d2b9691bd4cc3d0bde4ce" kindref="member">ementas</ref>[count].pratoDieta,<sp/>&amp;<ref refid="main_8c_1a19322fa92e3d2b9691bd4cc3d0bde4ce" kindref="member">ementas</ref>[count].caloriasDieta,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8c_1a19322fa92e3d2b9691bd4cc3d0bde4ce" kindref="member">ementas</ref>[count].pratoVegetariano,<sp/>&amp;<ref refid="main_8c_1a19322fa92e3d2b9691bd4cc3d0bde4ce" kindref="member">ementas</ref>[count].caloriasVegetariano)<sp/>==<sp/>10)<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count++;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>fclose(file);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>count;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="ficheiros_8c_1a5e09c7e7744a4d7814172ada6a316eaf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ficheiros_8c_1a5e09c7e7744a4d7814172ada6a316eaf" kindref="member">lerEscolhas</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/><ref refid="struct_escolha" kindref="compound">Escolha</ref><sp/><ref refid="main_8c_1ae0835e681bb09045b60cbc8a03cf5c91" kindref="member">escolhas</ref>[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxEscolhas)<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>FILE<sp/>*file<sp/>=<sp/>fopen(filename,<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!file)<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>perror(</highlight><highlight class="stringliteral">&quot;Erro<sp/>ao<sp/>abrir<sp/>o<sp/>ficheiro<sp/>de<sp/>escolhas&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(count<sp/>&lt;<sp/>maxEscolhas<sp/>&amp;&amp;<sp/></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fscanf(file,<sp/></highlight><highlight class="stringliteral">&quot;%9[^;];%d;%c\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8c_1ae0835e681bb09045b60cbc8a03cf5c91" kindref="member">escolhas</ref>[count].dia,<sp/>&amp;<ref refid="main_8c_1ae0835e681bb09045b60cbc8a03cf5c91" kindref="member">escolhas</ref>[count].idFuncionario,<sp/></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;<ref refid="main_8c_1ae0835e681bb09045b60cbc8a03cf5c91" kindref="member">escolhas</ref>[count].tipoPrato)<sp/>==<sp/>3)<sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count++;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>fclose(file);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>count;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="ficheiros_8c_1adf556d6f39c5f3cf6445315826c9d795" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ficheiros_8c_1adf556d6f39c5f3cf6445315826c9d795" kindref="member">gravarFuncionarios</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_funcionario" kindref="compound">Funcionario</ref><sp/><ref refid="main_8c_1adf03e8003bc467ef3b754ce4db3fdbf3" kindref="member">funcionarios</ref>[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numFuncionarios)<sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>FILE<sp/>*file<sp/>=<sp/>fopen(filename,<sp/></highlight><highlight class="stringliteral">&quot;w&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!file)<sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>perror(</highlight><highlight class="stringliteral">&quot;Erro<sp/>ao<sp/>abrir<sp/>o<sp/>ficheiro<sp/>para<sp/>gravação<sp/>de<sp/>funcionários&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>numFuncionarios;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(file,<sp/></highlight><highlight class="stringliteral">&quot;%d;%s;%s;%s\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="main_8c_1adf03e8003bc467ef3b754ce4db3fdbf3" kindref="member">funcionarios</ref>[i].</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="main_8c_1adf03e8003bc467ef3b754ce4db3fdbf3" kindref="member">funcionarios</ref>[i].nome,<sp/></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8c_1adf03e8003bc467ef3b754ce4db3fdbf3" kindref="member">funcionarios</ref>[i].nif,<sp/><ref refid="main_8c_1adf03e8003bc467ef3b754ce4db3fdbf3" kindref="member">funcionarios</ref>[i].telefone);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>fclose(file);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="comment">//<sp/>As<sp/>funções<sp/>`gravarEmenta`<sp/>e<sp/>`gravarEscolhas`<sp/>seguem<sp/>o<sp/>mesmo<sp/>padrão<sp/>de<sp/>documentação.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/ficheiros.c"/>
+  </compounddef>
+</doxygen>

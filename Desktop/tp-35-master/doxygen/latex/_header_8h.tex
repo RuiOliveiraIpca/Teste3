@@ -1,0 +1,198 @@
+\doxysection{src/\+Header.h File Reference}
+\label{_header_8h}\index{src/Header.h@{src/Header.h}}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ Funcionario}
+\item 
+struct \textbf{ Ementa}
+\item 
+struct \textbf{ Escolha}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ ler\+Funcionarios} (const char $\ast$filename, \textbf{ Funcionario} \textbf{ funcionarios}[$\,$], int max\+Funcionarios)
+\item 
+int \textbf{ ler\+Ementa} (const char $\ast$filename, \textbf{ Ementa} \textbf{ ementas}[$\,$], int max\+Ementas)
+\begin{DoxyCompactList}\small\item\em Lê os dados das ementas a partir de um ficheiro. \end{DoxyCompactList}\item 
+int \textbf{ ler\+Escolhas} (const char $\ast$filename, \textbf{ Escolha} \textbf{ escolhas}[$\,$], int max\+Escolhas)
+\begin{DoxyCompactList}\small\item\em Lê as escolhas dos utentes a partir de um ficheiro. \end{DoxyCompactList}\item 
+int \textbf{ gravar\+Funcionarios} (const char $\ast$filename, const \textbf{ Funcionario} \textbf{ funcionarios}[$\,$], int num\+Funcionarios)
+\begin{DoxyCompactList}\small\item\em Grava os dados dos funcionários em um ficheiro. \end{DoxyCompactList}\item 
+int \textbf{ gravar\+Ementa} (const char $\ast$filename, const \textbf{ Ementa} \textbf{ ementas}[$\,$], int num\+Ementas)
+\item 
+int \textbf{ gravar\+Escolhas} (const char $\ast$filename, const \textbf{ Escolha} \textbf{ escolhas}[$\,$], int num\+Escolhas)
+\item 
+void \textbf{ mostrar\+Funcionarios} (const \textbf{ Funcionario} \textbf{ funcionarios}[$\,$], int num\+Funcionarios)
+\item 
+void \textbf{ mostrar\+Ementas} (const \textbf{ Ementa} \textbf{ ementas}[$\,$], int num\+Ementas)
+\item 
+void \textbf{ mostrar\+Escolhas} (const \textbf{ Escolha} \textbf{ escolhas}[$\,$], int num\+Escolhas)
+\item 
+void \textbf{ Refeicoes\+Por\+Dia} (const \textbf{ Funcionario} \textbf{ funcionarios}[$\,$], int num\+Funcionarios, const \textbf{ Ementa} \textbf{ ementas}[$\,$], int num\+Ementas, const \textbf{ Escolha} \textbf{ escolhas}[$\,$], int num\+Escolhas, const char $\ast$dia\+Procurado)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{_header_8h_a0cd699b4d42c8a0fb755f57c4e0f7419}} 
+\index{Header.h@{Header.h}!gravarEmenta@{gravarEmenta}}
+\index{gravarEmenta@{gravarEmenta}!Header.h@{Header.h}}
+\doxysubsubsection{gravarEmenta()}
+{\footnotesize\ttfamily int gravar\+Ementa (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{const \textbf{ Ementa}}]{ementas[$\,$],  }\item[{int}]{num\+Ementas }\end{DoxyParamCaption})}
+
+\mbox{\label{_header_8h_ace23109ec23b910b3512052441f43fcd}} 
+\index{Header.h@{Header.h}!gravarEscolhas@{gravarEscolhas}}
+\index{gravarEscolhas@{gravarEscolhas}!Header.h@{Header.h}}
+\doxysubsubsection{gravarEscolhas()}
+{\footnotesize\ttfamily int gravar\+Escolhas (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{const \textbf{ Escolha}}]{escolhas[$\,$],  }\item[{int}]{num\+Escolhas }\end{DoxyParamCaption})}
+
+\mbox{\label{_header_8h_adf556d6f39c5f3cf6445315826c9d795}} 
+\index{Header.h@{Header.h}!gravarFuncionarios@{gravarFuncionarios}}
+\index{gravarFuncionarios@{gravarFuncionarios}!Header.h@{Header.h}}
+\doxysubsubsection{gravarFuncionarios()}
+{\footnotesize\ttfamily int gravar\+Funcionarios (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{const \textbf{ Funcionario}}]{funcionarios[$\,$],  }\item[{int}]{num\+Funcionarios }\end{DoxyParamCaption})}
+
+
+
+Grava os dados dos funcionários em um ficheiro. 
+
+Escreve o conteúdo de um array de estruturas do tipo {\ttfamily \doxyref{Funcionario}{p.}{struct_funcionario}} em um ficheiro com formato\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{id;nome;nif;telefone}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Caminho do ficheiro onde os dados serão gravados. \\
+\hline
+{\em funcionarios} & Array de estruturas contendo os dados a serem gravados. \\
+\hline
+{\em num\+Funcionarios} & Número de funcionários no array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Retorna 0 em caso de sucesso ou -\/1 em caso de erro. 
+\end{DoxyReturn}
+
+
+Definition at line 145 of file ficheiros.\+c.
+
+\mbox{\label{_header_8h_a2d7e43e4010eb8e488e346cb7b523ebc}} 
+\index{Header.h@{Header.h}!lerEmenta@{lerEmenta}}
+\index{lerEmenta@{lerEmenta}!Header.h@{Header.h}}
+\doxysubsubsection{lerEmenta()}
+{\footnotesize\ttfamily int ler\+Ementa (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{\textbf{ Ementa}}]{ementas[$\,$],  }\item[{int}]{max\+Ementas }\end{DoxyParamCaption})}
+
+
+
+Lê os dados das ementas a partir de um ficheiro. 
+
+Esta função lê um ficheiro com formato\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{dia;data;pratoPeixe;caloriasPeixe;pratoCarne;caloriasCarne;pratoDieta;caloriasDieta;pratoVegetariano;caloriasVegetariano}
+
+\end{DoxyCode}
+ e preenche um array de estruturas do tipo {\ttfamily \doxyref{Ementa}{p.}{struct_ementa}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Caminho do ficheiro a ser lido. \\
+\hline
+{\em ementas} & Array de estruturas para armazenar os dados. \\
+\hline
+{\em max\+Ementas} & Número máximo de ementas que podem ser armazenadas no array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Número de ementas lidas com sucesso ou -\/1 em caso de erro. 
+\end{DoxyReturn}
+
+
+Definition at line 76 of file ficheiros.\+c.
+
+\mbox{\label{_header_8h_a5e09c7e7744a4d7814172ada6a316eaf}} 
+\index{Header.h@{Header.h}!lerEscolhas@{lerEscolhas}}
+\index{lerEscolhas@{lerEscolhas}!Header.h@{Header.h}}
+\doxysubsubsection{lerEscolhas()}
+{\footnotesize\ttfamily int ler\+Escolhas (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{\textbf{ Escolha}}]{escolhas[$\,$],  }\item[{int}]{max\+Escolhas }\end{DoxyParamCaption})}
+
+
+
+Lê as escolhas dos utentes a partir de um ficheiro. 
+
+Esta função lê um ficheiro com formato\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{dia;idFuncionario;tipoPrato}
+
+\end{DoxyCode}
+ e preenche um array de estruturas do tipo {\ttfamily \doxyref{Escolha}{p.}{struct_escolha}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Caminho do ficheiro a ser lido. \\
+\hline
+{\em escolhas} & Array de estruturas para armazenar os dados. \\
+\hline
+{\em max\+Escolhas} & Número máximo de escolhas que podem ser armazenadas no array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Número de escolhas lidas com sucesso ou -\/1 em caso de erro. 
+\end{DoxyReturn}
+
+
+Definition at line 112 of file ficheiros.\+c.
+
+\mbox{\label{_header_8h_ac19dad6b6e1bc4bf120a79d68b086b56}} 
+\index{Header.h@{Header.h}!lerFuncionarios@{lerFuncionarios}}
+\index{lerFuncionarios@{lerFuncionarios}!Header.h@{Header.h}}
+\doxysubsubsection{lerFuncionarios()}
+{\footnotesize\ttfamily int ler\+Funcionarios (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{\textbf{ Funcionario}}]{funcionarios[$\,$],  }\item[{int}]{max\+Funcionarios }\end{DoxyParamCaption})}
+
+
+
+Definition at line 43 of file ficheiros.\+c.
+
+\mbox{\label{_header_8h_a27a7cc9f404091980aa170e65b5e5076}} 
+\index{Header.h@{Header.h}!mostrarEmentas@{mostrarEmentas}}
+\index{mostrarEmentas@{mostrarEmentas}!Header.h@{Header.h}}
+\doxysubsubsection{mostrarEmentas()}
+{\footnotesize\ttfamily void mostrar\+Ementas (\begin{DoxyParamCaption}\item[{const \textbf{ Ementa}}]{ementas[$\,$],  }\item[{int}]{num\+Ementas }\end{DoxyParamCaption})}
+
+
+
+Definition at line 22 of file mostrar\+\_\+dados.\+c.
+
+\mbox{\label{_header_8h_aea1c7d53d83c25332f034d6f33e85dbe}} 
+\index{Header.h@{Header.h}!mostrarEscolhas@{mostrarEscolhas}}
+\index{mostrarEscolhas@{mostrarEscolhas}!Header.h@{Header.h}}
+\doxysubsubsection{mostrarEscolhas()}
+{\footnotesize\ttfamily void mostrar\+Escolhas (\begin{DoxyParamCaption}\item[{const \textbf{ Escolha}}]{escolhas[$\,$],  }\item[{int}]{num\+Escolhas }\end{DoxyParamCaption})}
+
+
+
+Definition at line 39 of file mostrar\+\_\+dados.\+c.
+
+\mbox{\label{_header_8h_af4d1b5b4f6bd54ed1cf9df80e002cf52}} 
+\index{Header.h@{Header.h}!mostrarFuncionarios@{mostrarFuncionarios}}
+\index{mostrarFuncionarios@{mostrarFuncionarios}!Header.h@{Header.h}}
+\doxysubsubsection{mostrarFuncionarios()}
+{\footnotesize\ttfamily void mostrar\+Funcionarios (\begin{DoxyParamCaption}\item[{const \textbf{ Funcionario}}]{funcionarios[$\,$],  }\item[{int}]{num\+Funcionarios }\end{DoxyParamCaption})}
+
+
+
+Definition at line 8 of file mostrar\+\_\+dados.\+c.
+
+\mbox{\label{_header_8h_a26fbac556d67f20c34e54199567b1472}} 
+\index{Header.h@{Header.h}!RefeicoesPorDia@{RefeicoesPorDia}}
+\index{RefeicoesPorDia@{RefeicoesPorDia}!Header.h@{Header.h}}
+\doxysubsubsection{RefeicoesPorDia()}
+{\footnotesize\ttfamily void Refeicoes\+Por\+Dia (\begin{DoxyParamCaption}\item[{const \textbf{ Funcionario}}]{funcionarios[$\,$],  }\item[{int}]{num\+Funcionarios,  }\item[{const \textbf{ Ementa}}]{ementas[$\,$],  }\item[{int}]{num\+Ementas,  }\item[{const \textbf{ Escolha}}]{escolhas[$\,$],  }\item[{int}]{num\+Escolhas,  }\item[{const char $\ast$}]{dia\+Procurado }\end{DoxyParamCaption})}
+
+
+
+Definition at line 53 of file mostrar\+\_\+dados.\+c.
+

@@ -1,0 +1,8 @@
+git clone https://github.com/LabInf25n/tp-35.git
+
+
+
+
+git clone - faz a cópia integral do repositório
+git push - faz o upload do projeto
+git pull - faz o download do projeto

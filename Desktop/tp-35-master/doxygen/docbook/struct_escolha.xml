@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_escolha" xml:lang="en-US">
+<title>Escolha Struct Reference</title>
+<indexterm><primary>Escolha</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Header.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para>char <link linkend="_struct_escolha_1abcaaaf120791909ee441e7a6c3b4ff84">dia</link> [10]</para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_escolha_1a3fbfd3f6e0d265316bca8ae719141783">idFuncionario</link></para>
+</listitem>
+            <listitem><para>char <link linkend="_struct_escolha_1ab49a2c1d6d995bea9b9f5acaaec65c7b">tipoPrato</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line 25 of file Header.h.</para>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_struct_escolha_1abcaaaf120791909ee441e7a6c3b4ff84"/>    <section>
+    <title>dia</title>
+<indexterm><primary>dia</primary><secondary>Escolha</secondary></indexterm>
+<indexterm><primary>Escolha</primary><secondary>dia</secondary></indexterm>
+<para><computeroutput>char dia[10]</computeroutput></para><para>
+Definition at line 26 of file Header.h.</para>
+    </section><anchor xml:id="_struct_escolha_1a3fbfd3f6e0d265316bca8ae719141783"/>    <section>
+    <title>idFuncionario</title>
+<indexterm><primary>idFuncionario</primary><secondary>Escolha</secondary></indexterm>
+<indexterm><primary>Escolha</primary><secondary>idFuncionario</secondary></indexterm>
+<para><computeroutput>int idFuncionario</computeroutput></para><para>
+Definition at line 27 of file Header.h.</para>
+    </section><anchor xml:id="_struct_escolha_1ab49a2c1d6d995bea9b9f5acaaec65c7b"/>    <section>
+    <title>tipoPrato</title>
+<indexterm><primary>tipoPrato</primary><secondary>Escolha</secondary></indexterm>
+<indexterm><primary>Escolha</primary><secondary>tipoPrato</secondary></indexterm>
+<para><computeroutput>char tipoPrato</computeroutput></para><para>
+Definition at line 28 of file Header.h.</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+src/<link linkend="__header_8h">Header.h</link></section>
+</section>

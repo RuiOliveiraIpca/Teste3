@@ -1,0 +1,36 @@
+\doxysection{Exemplo}
+Lê os dados de funcionários a partir de um ficheiro.\+Esta função lê os dados de um ficheiro com formato\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{id;nome;nif;telefone}
+
+\end{DoxyCode}
+ e preenche um array de estruturas do tipo {\ttfamily \doxyref{Funcionario}{p.}{struct_funcionario}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Caminho do ficheiro a ser lido. \\
+\hline
+{\em funcionarios} & Array de estruturas para armazenar os dados. \\
+\hline
+{\em max\+Funcionarios} & Número máximo de funcionários que podem ser armazenados no array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Número de funcionários lidos com sucesso ou -\/1 em caso de erro.
+\end{DoxyReturn}
+de uso\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Funcionario funcionarios[100];}
+\DoxyCodeLine{\textcolor{keywordtype}{int} numFuncionarios = lerFuncionarios(\textcolor{stringliteral}{"{}funcionarios.txt"{}}, funcionarios, 100);}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (numFuncionarios == -\/1) \{}
+\DoxyCodeLine{    printf(\textcolor{stringliteral}{"{}Erro ao carregar os funcionários.\(\backslash\)n"{}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ 

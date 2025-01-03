@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="main_8c" kind="file" language="C++">
+    <compoundname>main.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes refid="_header_8h" local="yes">Header.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>Header.h</label>
+        <link refid="_header_8h"/>
+      </node>
+      <node id="1">
+        <label>src/main.c</label>
+        <link refid="main_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="main_8c_1adf03e8003bc467ef3b754ce4db3fdbf3" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_funcionario" kindref="compound">Funcionario</ref></type>
+        <definition>Funcionario funcionarios[100]</definition>
+        <argsstring>[100]</argsstring>
+        <name>funcionarios</name>
+        <briefdescription>
+<para>Array global para armazenar os dados dos funcionários. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main.c" line="20" column="13" bodyfile="src/main.c" bodystart="20" bodyend="-1"/>
+        <referencedby refid="ficheiros_8c_1adf556d6f39c5f3cf6445315826c9d795" compoundref="ficheiros_8c" startline="145" endline="159">gravarFuncionarios</referencedby>
+        <referencedby refid="ficheiros_8c_1ac19dad6b6e1bc4bf120a79d68b086b56" compoundref="ficheiros_8c" startline="43" endline="60">lerFuncionarios</referencedby>
+        <referencedby refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8c" startline="48" endline="88">main</referencedby>
+        <referencedby refid="_header_8h_1af4d1b5b4f6bd54ed1cf9df80e002cf52" compoundref="mostrar__dados_8c" startline="8" endline="19">mostrarFuncionarios</referencedby>
+        <referencedby refid="_header_8h_1a26fbac556d67f20c34e54199567b1472" compoundref="mostrar__dados_8c" startline="53" endline="110">RefeicoesPorDia</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="main_8c_1a19322fa92e3d2b9691bd4cc3d0bde4ce" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_ementa" kindref="compound">Ementa</ref></type>
+        <definition>Ementa ementas[50]</definition>
+        <argsstring>[50]</argsstring>
+        <name>ementas</name>
+        <briefdescription>
+<para>Array global para armazenar os dados das ementas. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main.c" line="23" column="8" bodyfile="src/main.c" bodystart="23" bodyend="-1"/>
+        <referencedby refid="ficheiros_8c_1a2d7e43e4010eb8e488e346cb7b523ebc" compoundref="ficheiros_8c" startline="76" endline="96">lerEmenta</referencedby>
+        <referencedby refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8c" startline="48" endline="88">main</referencedby>
+        <referencedby refid="_header_8h_1a27a7cc9f404091980aa170e65b5e5076" compoundref="mostrar__dados_8c" startline="22" endline="36">mostrarEmentas</referencedby>
+        <referencedby refid="_header_8h_1a26fbac556d67f20c34e54199567b1472" compoundref="mostrar__dados_8c" startline="53" endline="110">RefeicoesPorDia</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="main_8c_1ae0835e681bb09045b60cbc8a03cf5c91" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_escolha" kindref="compound">Escolha</ref></type>
+        <definition>Escolha escolhas[200]</definition>
+        <argsstring>[200]</argsstring>
+        <name>escolhas</name>
+        <briefdescription>
+<para>Array global para armazenar as escolhas realizadas pelos utentes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main.c" line="26" column="9" bodyfile="src/main.c" bodystart="26" bodyend="-1"/>
+        <referencedby refid="ficheiros_8c_1a5e09c7e7744a4d7814172ada6a316eaf" compoundref="ficheiros_8c" startline="112" endline="129">lerEscolhas</referencedby>
+        <referencedby refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8c" startline="48" endline="88">main</referencedby>
+        <referencedby refid="_header_8h_1aea1c7d53d83c25332f034d6f33e85dbe" compoundref="mostrar__dados_8c" startline="39" endline="50">mostrarEscolhas</referencedby>
+        <referencedby refid="_header_8h_1a26fbac556d67f20c34e54199567b1472" compoundref="mostrar__dados_8c" startline="53" endline="110">RefeicoesPorDia</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main.c" line="48" column="5" bodyfile="src/main.c" bodystart="48" bodyend="88"/>
+        <references refid="main_8c_1a19322fa92e3d2b9691bd4cc3d0bde4ce" compoundref="main_8c" startline="23">ementas</references>
+        <references refid="main_8c_1ae0835e681bb09045b60cbc8a03cf5c91" compoundref="main_8c" startline="26">escolhas</references>
+        <references refid="main_8c_1adf03e8003bc467ef3b754ce4db3fdbf3" compoundref="main_8c" startline="20">funcionarios</references>
+        <references refid="ficheiros_8c_1a2d7e43e4010eb8e488e346cb7b523ebc" compoundref="ficheiros_8c" startline="76" endline="96">lerEmenta</references>
+        <references refid="ficheiros_8c_1a5e09c7e7744a4d7814172ada6a316eaf" compoundref="ficheiros_8c" startline="112" endline="129">lerEscolhas</references>
+        <references refid="ficheiros_8c_1ac19dad6b6e1bc4bf120a79d68b086b56" compoundref="ficheiros_8c" startline="43" endline="60">lerFuncionarios</references>
+        <references refid="_header_8h_1a27a7cc9f404091980aa170e65b5e5076" compoundref="mostrar__dados_8c" startline="22" endline="36">mostrarEmentas</references>
+        <references refid="_header_8h_1aea1c7d53d83c25332f034d6f33e85dbe" compoundref="mostrar__dados_8c" startline="39" endline="50">mostrarEscolhas</references>
+        <references refid="_header_8h_1af4d1b5b4f6bd54ed1cf9df80e002cf52" compoundref="mostrar__dados_8c" startline="8" endline="19">mostrarFuncionarios</references>
+        <references refid="_header_8h_1a26fbac556d67f20c34e54199567b1472" compoundref="mostrar__dados_8c" startline="53" endline="110">RefeicoesPorDia</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Programa principal para gestão de funcionários, ementas e escolhas no espaço social. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Este programa realiza a leitura de dados de funcionários, ementas e escolhas de ficheiros específicos e apresenta informações relevantes, como:<itemizedlist>
+<listitem><para>Lista de funcionários</para>
+</listitem><listitem><para>Ementas da semana</para>
+</listitem><listitem><para>Escolhas realizadas pelos utentes</para>
+</listitem><listitem><para>Refeições solicitadas para um dia específico</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="author"><para>[Seu Nome] </para>
+</simplesect>
+<simplesect kind="date"><para>[Data Atual] </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_header_8h" kindref="compound">Header.h</ref>&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Declarações<sp/>de<sp/>funções<sp/>e<sp/>estruturas<sp/>globais</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="main_8c_1adf03e8003bc467ef3b754ce4db3fdbf3" refkind="member"><highlight class="normal"><ref refid="struct_funcionario" kindref="compound">Funcionario</ref><sp/><ref refid="main_8c_1adf03e8003bc467ef3b754ce4db3fdbf3" kindref="member">funcionarios</ref>[100];</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="main_8c_1a19322fa92e3d2b9691bd4cc3d0bde4ce" refkind="member"><highlight class="normal"><ref refid="struct_ementa" kindref="compound">Ementa</ref><sp/><ref refid="main_8c_1a19322fa92e3d2b9691bd4cc3d0bde4ce" kindref="member">ementas</ref>[50];</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="main_8c_1ae0835e681bb09045b60cbc8a03cf5c91" refkind="member"><highlight class="normal"><ref refid="struct_escolha" kindref="compound">Escolha</ref><sp/><ref refid="main_8c_1ae0835e681bb09045b60cbc8a03cf5c91" kindref="member">escolhas</ref>[200];</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Lê<sp/>os<sp/>dados<sp/>do<sp/>ficheiro<sp/>de<sp/>funcionários<sp/>e<sp/>armazena<sp/>no<sp/>array<sp/>global</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numFuncionarios<sp/>=<sp/><ref refid="ficheiros_8c_1ac19dad6b6e1bc4bf120a79d68b086b56" kindref="member">lerFuncionarios</ref>(</highlight><highlight class="stringliteral">&quot;./data/funcionarios.txt&quot;</highlight><highlight class="normal">,<sp/><ref refid="main_8c_1adf03e8003bc467ef3b754ce4db3fdbf3" kindref="member">funcionarios</ref>,<sp/>100);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(numFuncionarios<sp/>==<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Erro<sp/>ao<sp/>carregar<sp/>dados<sp/>de<sp/>funcionários.\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Lê<sp/>os<sp/>dados<sp/>do<sp/>ficheiro<sp/>de<sp/>ementas<sp/>e<sp/>armazena<sp/>no<sp/>array<sp/>global</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numEmentas<sp/>=<sp/><ref refid="ficheiros_8c_1a2d7e43e4010eb8e488e346cb7b523ebc" kindref="member">lerEmenta</ref>(</highlight><highlight class="stringliteral">&quot;./data/ementas.txt&quot;</highlight><highlight class="normal">,<sp/><ref refid="main_8c_1a19322fa92e3d2b9691bd4cc3d0bde4ce" kindref="member">ementas</ref>,<sp/>50);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(numEmentas<sp/>==<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Erro<sp/>ao<sp/>carregar<sp/>dados<sp/>de<sp/>ementas.\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Lê<sp/>os<sp/>dados<sp/>do<sp/>ficheiro<sp/>de<sp/>escolhas<sp/>e<sp/>armazena<sp/>no<sp/>array<sp/>global</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numEscolhas<sp/>=<sp/><ref refid="ficheiros_8c_1a5e09c7e7744a4d7814172ada6a316eaf" kindref="member">lerEscolhas</ref>(</highlight><highlight class="stringliteral">&quot;./data/escolhas.txt&quot;</highlight><highlight class="normal">,<sp/><ref refid="main_8c_1ae0835e681bb09045b60cbc8a03cf5c91" kindref="member">escolhas</ref>,<sp/>200);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(numEscolhas<sp/>==<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Erro<sp/>ao<sp/>carregar<sp/>dados<sp/>de<sp/>escolhas.\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Mostra<sp/>a<sp/>lista<sp/>de<sp/>funcionários<sp/>carregados</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_header_8h_1af4d1b5b4f6bd54ed1cf9df80e002cf52" kindref="member">mostrarFuncionarios</ref>(<ref refid="main_8c_1adf03e8003bc467ef3b754ce4db3fdbf3" kindref="member">funcionarios</ref>,<sp/>numFuncionarios);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Mostra<sp/>a<sp/>lista<sp/>de<sp/>ementas<sp/>carregadas</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_header_8h_1a27a7cc9f404091980aa170e65b5e5076" kindref="member">mostrarEmentas</ref>(<ref refid="main_8c_1a19322fa92e3d2b9691bd4cc3d0bde4ce" kindref="member">ementas</ref>,<sp/>numEmentas);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Mostra<sp/>a<sp/>lista<sp/>de<sp/>escolhas<sp/>carregadas</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_header_8h_1aea1c7d53d83c25332f034d6f33e85dbe" kindref="member">mostrarEscolhas</ref>(<ref refid="main_8c_1ae0835e681bb09045b60cbc8a03cf5c91" kindref="member">escolhas</ref>,<sp/>numEscolhas);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Solicita<sp/>ao<sp/>utilizador<sp/>o<sp/>dia<sp/>da<sp/>semana<sp/>para<sp/>verificar<sp/>as<sp/>refeições<sp/>correspondentes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>diaProcurado[10];</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Digite<sp/>o<sp/>dia<sp/>da<sp/>semana<sp/>(ex:<sp/>2feira):<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>scanf(</highlight><highlight class="stringliteral">&quot;%s&quot;</highlight><highlight class="normal">,<sp/>diaProcurado);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Apresenta<sp/>as<sp/>refeições<sp/>solicitadas<sp/>para<sp/>o<sp/>dia<sp/>escolhido</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_header_8h_1a26fbac556d67f20c34e54199567b1472" kindref="member">RefeicoesPorDia</ref>(<ref refid="main_8c_1adf03e8003bc467ef3b754ce4db3fdbf3" kindref="member">funcionarios</ref>,<sp/>numFuncionarios,<sp/><ref refid="main_8c_1a19322fa92e3d2b9691bd4cc3d0bde4ce" kindref="member">ementas</ref>,<sp/>numEmentas,<sp/><ref refid="main_8c_1ae0835e681bb09045b60cbc8a03cf5c91" kindref="member">escolhas</ref>,<sp/>numEscolhas,<sp/>diaProcurado);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/main.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_ementa" kind="struct" language="C++" prot="public">
+    <compoundname>Ementa</compoundname>
+    <includes refid="_header_8h" local="no">Header.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_ementa_1abcaaaf120791909ee441e7a6c3b4ff84" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char dia[10]</definition>
+        <argsstring>[10]</argsstring>
+        <name>dia</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Header.h" line="13" column="10" bodyfile="src/Header.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_ementa_1ad8487ad7482a82658c15cfacdf9e1b9e" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char data[11]</definition>
+        <argsstring>[11]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Header.h" line="14" column="10" bodyfile="src/Header.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_ementa_1aa4df81d38535c2b4ea437c454fd56bfd" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char pratoPeixe[100]</definition>
+        <argsstring>[100]</argsstring>
+        <name>pratoPeixe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Header.h" line="15" column="10" bodyfile="src/Header.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="_header_8h_1a26fbac556d67f20c34e54199567b1472" compoundref="mostrar__dados_8c" startline="53" endline="110">RefeicoesPorDia</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_ementa_1a9e36f8a86c1ce325c169111580c3abcb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int caloriasPeixe</definition>
+        <argsstring></argsstring>
+        <name>caloriasPeixe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Header.h" line="16" column="9" bodyfile="src/Header.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_ementa_1a6780e97a7c45f99645dfc2be31afea57" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char pratoCarne[100]</definition>
+        <argsstring>[100]</argsstring>
+        <name>pratoCarne</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Header.h" line="17" column="10" bodyfile="src/Header.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="_header_8h_1a26fbac556d67f20c34e54199567b1472" compoundref="mostrar__dados_8c" startline="53" endline="110">RefeicoesPorDia</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_ementa_1a625e5607fb1e9125c66ed79e0955105b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int caloriasCarne</definition>
+        <argsstring></argsstring>
+        <name>caloriasCarne</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Header.h" line="18" column="9" bodyfile="src/Header.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_ementa_1ab9353827437e601e5fb828b2b0dd7e15" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char pratoDieta[100]</definition>
+        <argsstring>[100]</argsstring>
+        <name>pratoDieta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Header.h" line="19" column="10" bodyfile="src/Header.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="_header_8h_1a26fbac556d67f20c34e54199567b1472" compoundref="mostrar__dados_8c" startline="53" endline="110">RefeicoesPorDia</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_ementa_1aa2b8df1a1ef37cab5024502380f50bd6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int caloriasDieta</definition>
+        <argsstring></argsstring>
+        <name>caloriasDieta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Header.h" line="20" column="9" bodyfile="src/Header.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_ementa_1aacf3350e439cade20bd39fbb1231487f" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char pratoVegetariano[100]</definition>
+        <argsstring>[100]</argsstring>
+        <name>pratoVegetariano</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Header.h" line="21" column="10" bodyfile="src/Header.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="_header_8h_1a26fbac556d67f20c34e54199567b1472" compoundref="mostrar__dados_8c" startline="53" endline="110">RefeicoesPorDia</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_ementa_1aecbf0dbe0c543a0a388cedd4b7deb679" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int caloriasVegetariano</definition>
+        <argsstring></argsstring>
+        <name>caloriasVegetariano</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Header.h" line="22" column="9" bodyfile="src/Header.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Header.h" line="12" column="1" bodyfile="src/Header.h" bodystart="12" bodyend="23"/>
+    <listofallmembers>
+      <member refid="struct_ementa_1a625e5607fb1e9125c66ed79e0955105b" prot="public" virt="non-virtual"><scope>Ementa</scope><name>caloriasCarne</name></member>
+      <member refid="struct_ementa_1aa2b8df1a1ef37cab5024502380f50bd6" prot="public" virt="non-virtual"><scope>Ementa</scope><name>caloriasDieta</name></member>
+      <member refid="struct_ementa_1a9e36f8a86c1ce325c169111580c3abcb" prot="public" virt="non-virtual"><scope>Ementa</scope><name>caloriasPeixe</name></member>
+      <member refid="struct_ementa_1aecbf0dbe0c543a0a388cedd4b7deb679" prot="public" virt="non-virtual"><scope>Ementa</scope><name>caloriasVegetariano</name></member>
+      <member refid="struct_ementa_1ad8487ad7482a82658c15cfacdf9e1b9e" prot="public" virt="non-virtual"><scope>Ementa</scope><name>data</name></member>
+      <member refid="struct_ementa_1abcaaaf120791909ee441e7a6c3b4ff84" prot="public" virt="non-virtual"><scope>Ementa</scope><name>dia</name></member>
+      <member refid="struct_ementa_1a6780e97a7c45f99645dfc2be31afea57" prot="public" virt="non-virtual"><scope>Ementa</scope><name>pratoCarne</name></member>
+      <member refid="struct_ementa_1ab9353827437e601e5fb828b2b0dd7e15" prot="public" virt="non-virtual"><scope>Ementa</scope><name>pratoDieta</name></member>
+      <member refid="struct_ementa_1aa4df81d38535c2b4ea437c454fd56bfd" prot="public" virt="non-virtual"><scope>Ementa</scope><name>pratoPeixe</name></member>
+      <member refid="struct_ementa_1aacf3350e439cade20bd39fbb1231487f" prot="public" virt="non-virtual"><scope>Ementa</scope><name>pratoVegetariano</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

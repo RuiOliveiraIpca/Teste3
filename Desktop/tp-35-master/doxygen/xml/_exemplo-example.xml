@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_exemplo-example" kind="example">
+    <compoundname>Exemplo</compoundname>
+    <briefdescription>
+<para>Lê os dados de funcionários a partir de um ficheiro. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Lê os dados de funcionários a partir de um ficheiro.Esta função lê os dados de um ficheiro com formato: <programlisting><codeline><highlight class="normal">id;nome;nif;telefone</highlight></codeline>
+</programlisting> e preenche um array de estruturas do tipo <computeroutput><ref refid="struct_funcionario" kindref="compound">Funcionario</ref></computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Caminho do ficheiro a ser lido. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>funcionarios</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array de estruturas para armazenar os dados. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxFuncionarios</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Número máximo de funcionários que podem ser armazenados no array. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int Número de funcionários lidos com sucesso ou -1 em caso de erro.</para>
+</simplesect>
+de uso: <programlisting filename=".c"><codeline><highlight class="normal"><ref refid="struct_funcionario" kindref="compound">Funcionario</ref><sp/><ref refid="main_8c_1adf03e8003bc467ef3b754ce4db3fdbf3" kindref="member">funcionarios</ref>[100];</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numFuncionarios<sp/>=<sp/><ref refid="ficheiros_8c_1ac19dad6b6e1bc4bf120a79d68b086b56" kindref="member">lerFuncionarios</ref>(</highlight><highlight class="stringliteral">&quot;funcionarios.txt&quot;</highlight><highlight class="normal">,<sp/><ref refid="main_8c_1adf03e8003bc467ef3b754ce4db3fdbf3" kindref="member">funcionarios</ref>,<sp/>100);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(numFuncionarios<sp/>==<sp/>-1)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Erro<sp/>ao<sp/>carregar<sp/>os<sp/>funcionários.\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> <programlisting filename="Exemplo"></programlisting> </para>
+    </detaileddescription>
+    <location file="src/ficheiros.c"/>
+  </compounddef>
+</doxygen>

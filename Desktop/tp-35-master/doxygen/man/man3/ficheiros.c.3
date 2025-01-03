@@ -1,0 +1,157 @@
+.TH "src/ficheiros.c" 3 "Thu Dec 12 2024" "Gestão de refeições" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/ficheiros.c \- Implementação de funções para manipulação de ficheiros de dados\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include 'Header\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBlerFuncionarios\fP (const char *filename, \fBFuncionario\fP \fBfuncionarios\fP[], int maxFuncionarios)"
+.br
+.ti -1c
+.RI "int \fBlerEmenta\fP (const char *filename, \fBEmenta\fP \fBementas\fP[], int maxEmentas)"
+.br
+.RI "Lê os dados das ementas a partir de um ficheiro\&. "
+.ti -1c
+.RI "int \fBlerEscolhas\fP (const char *filename, \fBEscolha\fP \fBescolhas\fP[], int maxEscolhas)"
+.br
+.RI "Lê as escolhas dos utentes a partir de um ficheiro\&. "
+.ti -1c
+.RI "int \fBgravarFuncionarios\fP (const char *filename, const \fBFuncionario\fP \fBfuncionarios\fP[], int numFuncionarios)"
+.br
+.RI "Grava os dados dos funcionários em um ficheiro\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implementação de funções para manipulação de ficheiros de dados\&. 
+
+Este arquivo contém as funções para ler e gravar dados em ficheiros de texto relacionados a funcionários, ementas e escolhas de um sistema de gestão\&.
+.PP
+Cada função lida com formatos específicos de ficheiros, organizados por linhas separadas por \fC;\fP\&.
+.PP
+\fBAuthor\fP
+.RS 4
+[Seu Nome] 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+[Data Atual] 
+.RE
+.PP
+
+.PP
+Definition in file \fBficheiros\&.c\fP\&.
+.SH "Function Documentation"
+.PP 
+.SS "int gravarFuncionarios (const char * filename, const \fBFuncionario\fP funcionarios[], int numFuncionarios)"
+
+.PP
+Grava os dados dos funcionários em um ficheiro\&. Escreve o conteúdo de um array de estruturas do tipo \fC\fBFuncionario\fP\fP em um ficheiro com formato: 
+.PP
+.nf
+id;nome;nif;telefone
+
+.fi
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fIfilename\fP Caminho do ficheiro onde os dados serão gravados\&. 
+.br
+\fIfuncionarios\fP Array de estruturas contendo os dados a serem gravados\&. 
+.br
+\fInumFuncionarios\fP Número de funcionários no array\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int Retorna 0 em caso de sucesso ou -1 em caso de erro\&. 
+.RE
+.PP
+
+.PP
+Definition at line 145 of file ficheiros\&.c\&.
+.SS "int lerEmenta (const char * filename, \fBEmenta\fP ementas[], int maxEmentas)"
+
+.PP
+Lê os dados das ementas a partir de um ficheiro\&. Esta função lê um ficheiro com formato: 
+.PP
+.nf
+dia;data;pratoPeixe;caloriasPeixe;pratoCarne;caloriasCarne;pratoDieta;caloriasDieta;pratoVegetariano;caloriasVegetariano
+
+.fi
+.PP
+ e preenche um array de estruturas do tipo \fC\fBEmenta\fP\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIfilename\fP Caminho do ficheiro a ser lido\&. 
+.br
+\fIementas\fP Array de estruturas para armazenar os dados\&. 
+.br
+\fImaxEmentas\fP Número máximo de ementas que podem ser armazenadas no array\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int Número de ementas lidas com sucesso ou -1 em caso de erro\&. 
+.RE
+.PP
+
+.PP
+Definition at line 76 of file ficheiros\&.c\&.
+.SS "int lerEscolhas (const char * filename, \fBEscolha\fP escolhas[], int maxEscolhas)"
+
+.PP
+Lê as escolhas dos utentes a partir de um ficheiro\&. Esta função lê um ficheiro com formato: 
+.PP
+.nf
+dia;idFuncionario;tipoPrato
+
+.fi
+.PP
+ e preenche um array de estruturas do tipo \fC\fBEscolha\fP\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIfilename\fP Caminho do ficheiro a ser lido\&. 
+.br
+\fIescolhas\fP Array de estruturas para armazenar os dados\&. 
+.br
+\fImaxEscolhas\fP Número máximo de escolhas que podem ser armazenadas no array\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int Número de escolhas lidas com sucesso ou -1 em caso de erro\&. 
+.RE
+.PP
+
+.PP
+Definition at line 112 of file ficheiros\&.c\&.
+.SS "int lerFuncionarios (const char * filename, \fBFuncionario\fP funcionarios[], int maxFuncionarios)"
+
+.PP
+\fBExamples\fP
+.in +1c
+\fBExemplo\fP\&.
+.PP
+Definition at line 43 of file ficheiros\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Gestão de refeições from the source code\&.

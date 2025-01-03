@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_escolha" kind="struct" language="C++" prot="public">
+    <compoundname>Escolha</compoundname>
+    <includes refid="_header_8h" local="no">Header.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_escolha_1abcaaaf120791909ee441e7a6c3b4ff84" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char dia[10]</definition>
+        <argsstring>[10]</argsstring>
+        <name>dia</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Header.h" line="26" column="10" bodyfile="src/Header.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_escolha_1a3fbfd3f6e0d265316bca8ae719141783" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int idFuncionario</definition>
+        <argsstring></argsstring>
+        <name>idFuncionario</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Header.h" line="27" column="9" bodyfile="src/Header.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_escolha_1ab49a2c1d6d995bea9b9f5acaaec65c7b" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char tipoPrato</definition>
+        <argsstring></argsstring>
+        <name>tipoPrato</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Header.h" line="28" column="10" bodyfile="src/Header.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Header.h" line="25" column="1" bodyfile="src/Header.h" bodystart="25" bodyend="29"/>
+    <listofallmembers>
+      <member refid="struct_escolha_1abcaaaf120791909ee441e7a6c3b4ff84" prot="public" virt="non-virtual"><scope>Escolha</scope><name>dia</name></member>
+      <member refid="struct_escolha_1a3fbfd3f6e0d265316bca8ae719141783" prot="public" virt="non-virtual"><scope>Escolha</scope><name>idFuncionario</name></member>
+      <member refid="struct_escolha_1ab49a2c1d6d995bea9b9f5acaaec65c7b" prot="public" virt="non-virtual"><scope>Escolha</scope><name>tipoPrato</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

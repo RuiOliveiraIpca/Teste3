@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_ementa" xml:lang="en-US">
+<title>Ementa Struct Reference</title>
+<indexterm><primary>Ementa</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Header.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para>char <link linkend="_struct_ementa_1abcaaaf120791909ee441e7a6c3b4ff84">dia</link> [10]</para>
+</listitem>
+            <listitem><para>char <link linkend="_struct_ementa_1ad8487ad7482a82658c15cfacdf9e1b9e">data</link> [11]</para>
+</listitem>
+            <listitem><para>char <link linkend="_struct_ementa_1aa4df81d38535c2b4ea437c454fd56bfd">pratoPeixe</link> [100]</para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_ementa_1a9e36f8a86c1ce325c169111580c3abcb">caloriasPeixe</link></para>
+</listitem>
+            <listitem><para>char <link linkend="_struct_ementa_1a6780e97a7c45f99645dfc2be31afea57">pratoCarne</link> [100]</para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_ementa_1a625e5607fb1e9125c66ed79e0955105b">caloriasCarne</link></para>
+</listitem>
+            <listitem><para>char <link linkend="_struct_ementa_1ab9353827437e601e5fb828b2b0dd7e15">pratoDieta</link> [100]</para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_ementa_1aa2b8df1a1ef37cab5024502380f50bd6">caloriasDieta</link></para>
+</listitem>
+            <listitem><para>char <link linkend="_struct_ementa_1aacf3350e439cade20bd39fbb1231487f">pratoVegetariano</link> [100]</para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_ementa_1aecbf0dbe0c543a0a388cedd4b7deb679">caloriasVegetariano</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line 12 of file Header.h.</para>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_struct_ementa_1a625e5607fb1e9125c66ed79e0955105b"/>    <section>
+    <title>caloriasCarne</title>
+<indexterm><primary>caloriasCarne</primary><secondary>Ementa</secondary></indexterm>
+<indexterm><primary>Ementa</primary><secondary>caloriasCarne</secondary></indexterm>
+<para><computeroutput>int caloriasCarne</computeroutput></para><para>
+Definition at line 18 of file Header.h.</para>
+    </section><anchor xml:id="_struct_ementa_1aa2b8df1a1ef37cab5024502380f50bd6"/>    <section>
+    <title>caloriasDieta</title>
+<indexterm><primary>caloriasDieta</primary><secondary>Ementa</secondary></indexterm>
+<indexterm><primary>Ementa</primary><secondary>caloriasDieta</secondary></indexterm>
+<para><computeroutput>int caloriasDieta</computeroutput></para><para>
+Definition at line 20 of file Header.h.</para>
+    </section><anchor xml:id="_struct_ementa_1a9e36f8a86c1ce325c169111580c3abcb"/>    <section>
+    <title>caloriasPeixe</title>
+<indexterm><primary>caloriasPeixe</primary><secondary>Ementa</secondary></indexterm>
+<indexterm><primary>Ementa</primary><secondary>caloriasPeixe</secondary></indexterm>
+<para><computeroutput>int caloriasPeixe</computeroutput></para><para>
+Definition at line 16 of file Header.h.</para>
+    </section><anchor xml:id="_struct_ementa_1aecbf0dbe0c543a0a388cedd4b7deb679"/>    <section>
+    <title>caloriasVegetariano</title>
+<indexterm><primary>caloriasVegetariano</primary><secondary>Ementa</secondary></indexterm>
+<indexterm><primary>Ementa</primary><secondary>caloriasVegetariano</secondary></indexterm>
+<para><computeroutput>int caloriasVegetariano</computeroutput></para><para>
+Definition at line 22 of file Header.h.</para>
+    </section><anchor xml:id="_struct_ementa_1ad8487ad7482a82658c15cfacdf9e1b9e"/>    <section>
+    <title>data</title>
+<indexterm><primary>data</primary><secondary>Ementa</secondary></indexterm>
+<indexterm><primary>Ementa</primary><secondary>data</secondary></indexterm>
+<para><computeroutput>char data[11]</computeroutput></para><para>
+Definition at line 14 of file Header.h.</para>
+    </section><anchor xml:id="_struct_ementa_1abcaaaf120791909ee441e7a6c3b4ff84"/>    <section>
+    <title>dia</title>
+<indexterm><primary>dia</primary><secondary>Ementa</secondary></indexterm>
+<indexterm><primary>Ementa</primary><secondary>dia</secondary></indexterm>
+<para><computeroutput>char dia[10]</computeroutput></para><para>
+Definition at line 13 of file Header.h.</para>
+    </section><anchor xml:id="_struct_ementa_1a6780e97a7c45f99645dfc2be31afea57"/>    <section>
+    <title>pratoCarne</title>
+<indexterm><primary>pratoCarne</primary><secondary>Ementa</secondary></indexterm>
+<indexterm><primary>Ementa</primary><secondary>pratoCarne</secondary></indexterm>
+<para><computeroutput>char pratoCarne[100]</computeroutput></para><para>
+Definition at line 17 of file Header.h.</para>
+    </section><anchor xml:id="_struct_ementa_1ab9353827437e601e5fb828b2b0dd7e15"/>    <section>
+    <title>pratoDieta</title>
+<indexterm><primary>pratoDieta</primary><secondary>Ementa</secondary></indexterm>
+<indexterm><primary>Ementa</primary><secondary>pratoDieta</secondary></indexterm>
+<para><computeroutput>char pratoDieta[100]</computeroutput></para><para>
+Definition at line 19 of file Header.h.</para>
+    </section><anchor xml:id="_struct_ementa_1aa4df81d38535c2b4ea437c454fd56bfd"/>    <section>
+    <title>pratoPeixe</title>
+<indexterm><primary>pratoPeixe</primary><secondary>Ementa</secondary></indexterm>
+<indexterm><primary>Ementa</primary><secondary>pratoPeixe</secondary></indexterm>
+<para><computeroutput>char pratoPeixe[100]</computeroutput></para><para>
+Definition at line 15 of file Header.h.</para>
+    </section><anchor xml:id="_struct_ementa_1aacf3350e439cade20bd39fbb1231487f"/>    <section>
+    <title>pratoVegetariano</title>
+<indexterm><primary>pratoVegetariano</primary><secondary>Ementa</secondary></indexterm>
+<indexterm><primary>Ementa</primary><secondary>pratoVegetariano</secondary></indexterm>
+<para><computeroutput>char pratoVegetariano[100]</computeroutput></para><para>
+Definition at line 21 of file Header.h.</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+src/<link linkend="__header_8h">Header.h</link></section>
+</section>

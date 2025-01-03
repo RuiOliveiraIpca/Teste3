@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="struct_ementa" kind="struct"><name>Ementa</name>
+    <member refid="struct_ementa_1abcaaaf120791909ee441e7a6c3b4ff84" kind="variable"><name>dia</name></member>
+    <member refid="struct_ementa_1ad8487ad7482a82658c15cfacdf9e1b9e" kind="variable"><name>data</name></member>
+    <member refid="struct_ementa_1aa4df81d38535c2b4ea437c454fd56bfd" kind="variable"><name>pratoPeixe</name></member>
+    <member refid="struct_ementa_1a9e36f8a86c1ce325c169111580c3abcb" kind="variable"><name>caloriasPeixe</name></member>
+    <member refid="struct_ementa_1a6780e97a7c45f99645dfc2be31afea57" kind="variable"><name>pratoCarne</name></member>
+    <member refid="struct_ementa_1a625e5607fb1e9125c66ed79e0955105b" kind="variable"><name>caloriasCarne</name></member>
+    <member refid="struct_ementa_1ab9353827437e601e5fb828b2b0dd7e15" kind="variable"><name>pratoDieta</name></member>
+    <member refid="struct_ementa_1aa2b8df1a1ef37cab5024502380f50bd6" kind="variable"><name>caloriasDieta</name></member>
+    <member refid="struct_ementa_1aacf3350e439cade20bd39fbb1231487f" kind="variable"><name>pratoVegetariano</name></member>
+    <member refid="struct_ementa_1aecbf0dbe0c543a0a388cedd4b7deb679" kind="variable"><name>caloriasVegetariano</name></member>
+  </compound>
+  <compound refid="struct_escolha" kind="struct"><name>Escolha</name>
+    <member refid="struct_escolha_1abcaaaf120791909ee441e7a6c3b4ff84" kind="variable"><name>dia</name></member>
+    <member refid="struct_escolha_1a3fbfd3f6e0d265316bca8ae719141783" kind="variable"><name>idFuncionario</name></member>
+    <member refid="struct_escolha_1ab49a2c1d6d995bea9b9f5acaaec65c7b" kind="variable"><name>tipoPrato</name></member>
+  </compound>
+  <compound refid="struct_funcionario" kind="struct"><name>Funcionario</name>
+    <member refid="struct_funcionario_1a7441ef0865bcb3db9b8064dd7375c1ea" kind="variable"><name>id</name></member>
+    <member refid="struct_funcionario_1aa4e90ca99702bac9e1c78503ad86acba" kind="variable"><name>nome</name></member>
+    <member refid="struct_funcionario_1a2675bd15b21381746dad2f447e841be8" kind="variable"><name>nif</name></member>
+    <member refid="struct_funcionario_1a2b3e6e14a2f6909a2d7c095c16a343c8" kind="variable"><name>telefone</name></member>
+  </compound>
+  <compound refid="ficheiros_8c" kind="file"><name>ficheiros.c</name>
+    <member refid="ficheiros_8c_1ac19dad6b6e1bc4bf120a79d68b086b56" kind="function"><name>lerFuncionarios</name></member>
+    <member refid="ficheiros_8c_1a2d7e43e4010eb8e488e346cb7b523ebc" kind="function"><name>lerEmenta</name></member>
+    <member refid="ficheiros_8c_1a5e09c7e7744a4d7814172ada6a316eaf" kind="function"><name>lerEscolhas</name></member>
+    <member refid="ficheiros_8c_1adf556d6f39c5f3cf6445315826c9d795" kind="function"><name>gravarFuncionarios</name></member>
+  </compound>
+  <compound refid="_header_8h" kind="file"><name>Header.h</name>
+    <member refid="_header_8h_1ac19dad6b6e1bc4bf120a79d68b086b56" kind="function"><name>lerFuncionarios</name></member>
+    <member refid="_header_8h_1a2d7e43e4010eb8e488e346cb7b523ebc" kind="function"><name>lerEmenta</name></member>
+    <member refid="_header_8h_1a5e09c7e7744a4d7814172ada6a316eaf" kind="function"><name>lerEscolhas</name></member>
+    <member refid="_header_8h_1adf556d6f39c5f3cf6445315826c9d795" kind="function"><name>gravarFuncionarios</name></member>
+    <member refid="_header_8h_1a0cd699b4d42c8a0fb755f57c4e0f7419" kind="function"><name>gravarEmenta</name></member>
+    <member refid="_header_8h_1ace23109ec23b910b3512052441f43fcd" kind="function"><name>gravarEscolhas</name></member>
+    <member refid="_header_8h_1af4d1b5b4f6bd54ed1cf9df80e002cf52" kind="function"><name>mostrarFuncionarios</name></member>
+    <member refid="_header_8h_1a27a7cc9f404091980aa170e65b5e5076" kind="function"><name>mostrarEmentas</name></member>
+    <member refid="_header_8h_1aea1c7d53d83c25332f034d6f33e85dbe" kind="function"><name>mostrarEscolhas</name></member>
+    <member refid="_header_8h_1a26fbac556d67f20c34e54199567b1472" kind="function"><name>RefeicoesPorDia</name></member>
+  </compound>
+  <compound refid="main_8c" kind="file"><name>main.c</name>
+    <member refid="main_8c_1adf03e8003bc467ef3b754ce4db3fdbf3" kind="variable"><name>funcionarios</name></member>
+    <member refid="main_8c_1a19322fa92e3d2b9691bd4cc3d0bde4ce" kind="variable"><name>ementas</name></member>
+    <member refid="main_8c_1ae0835e681bb09045b60cbc8a03cf5c91" kind="variable"><name>escolhas</name></member>
+    <member refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="mostrar__dados_8c" kind="file"><name>mostrar_dados.c</name>
+    <member refid="mostrar__dados_8c_1af4d1b5b4f6bd54ed1cf9df80e002cf52" kind="function"><name>mostrarFuncionarios</name></member>
+    <member refid="mostrar__dados_8c_1a27a7cc9f404091980aa170e65b5e5076" kind="function"><name>mostrarEmentas</name></member>
+    <member refid="mostrar__dados_8c_1aea1c7d53d83c25332f034d6f33e85dbe" kind="function"><name>mostrarEscolhas</name></member>
+    <member refid="mostrar__dados_8c_1a26fbac556d67f20c34e54199567b1472" kind="function"><name>RefeicoesPorDia</name></member>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="_exemplo-example" kind="example"><name>Exemplo</name>
+  </compound>
+  <compound refid="_uso-example" kind="example"><name>Uso</name>
+  </compound>
+</doxygenindex>

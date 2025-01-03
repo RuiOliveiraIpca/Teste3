@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_mostrar__dados_8c" xml:lang="en-US">
+<title>src/mostrar_dados.c File Reference</title>
+<indexterm><primary>src/mostrar_dados.c</primary></indexterm>
+<programlisting>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+#include &quot;Header.h&quot;
+</programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_mostrar__dados_8c_1af4d1b5b4f6bd54ed1cf9df80e002cf52">mostrarFuncionarios</link> (const <link linkend="_struct_funcionario">Funcionario</link> <link linkend="_main_8c_1adf03e8003bc467ef3b754ce4db3fdbf3">funcionarios</link>[], int numFuncionarios)</para>
+</listitem>
+            <listitem><para>void <link linkend="_mostrar__dados_8c_1a27a7cc9f404091980aa170e65b5e5076">mostrarEmentas</link> (const <link linkend="_struct_ementa">Ementa</link> <link linkend="_main_8c_1a19322fa92e3d2b9691bd4cc3d0bde4ce">ementas</link>[], int numEmentas)</para>
+</listitem>
+            <listitem><para>void <link linkend="_mostrar__dados_8c_1aea1c7d53d83c25332f034d6f33e85dbe">mostrarEscolhas</link> (const <link linkend="_struct_escolha">Escolha</link> <link linkend="_main_8c_1ae0835e681bb09045b60cbc8a03cf5c91">escolhas</link>[], int numEscolhas)</para>
+</listitem>
+            <listitem><para>void <link linkend="_mostrar__dados_8c_1a26fbac556d67f20c34e54199567b1472">RefeicoesPorDia</link> (const <link linkend="_struct_funcionario">Funcionario</link> <link linkend="_main_8c_1adf03e8003bc467ef3b754ce4db3fdbf3">funcionarios</link>[], int numFuncionarios, const <link linkend="_struct_ementa">Ementa</link> <link linkend="_main_8c_1a19322fa92e3d2b9691bd4cc3d0bde4ce">ementas</link>[], int numEmentas, const <link linkend="_struct_escolha">Escolha</link> <link linkend="_main_8c_1ae0835e681bb09045b60cbc8a03cf5c91">escolhas</link>[], int numEscolhas, const char *diaProcurado)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_mostrar__dados_8c_1a27a7cc9f404091980aa170e65b5e5076"/>    <section>
+    <title>mostrarEmentas()</title>
+<indexterm><primary>mostrarEmentas</primary><secondary>mostrar_dados.c</secondary></indexterm>
+<indexterm><primary>mostrar_dados.c</primary><secondary>mostrarEmentas</secondary></indexterm>
+<para><computeroutput>void mostrarEmentas (const <link linkend="_struct_ementa">Ementa</link> ementas[], int numEmentas)</computeroutput></para><para>
+Definition at line 22 of file mostrar_dados.c.</para>
+    </section><anchor xml:id="_mostrar__dados_8c_1aea1c7d53d83c25332f034d6f33e85dbe"/>    <section>
+    <title>mostrarEscolhas()</title>
+<indexterm><primary>mostrarEscolhas</primary><secondary>mostrar_dados.c</secondary></indexterm>
+<indexterm><primary>mostrar_dados.c</primary><secondary>mostrarEscolhas</secondary></indexterm>
+<para><computeroutput>void mostrarEscolhas (const <link linkend="_struct_escolha">Escolha</link> escolhas[], int numEscolhas)</computeroutput></para><para>
+Definition at line 39 of file mostrar_dados.c.</para>
+    </section><anchor xml:id="_mostrar__dados_8c_1af4d1b5b4f6bd54ed1cf9df80e002cf52"/>    <section>
+    <title>mostrarFuncionarios()</title>
+<indexterm><primary>mostrarFuncionarios</primary><secondary>mostrar_dados.c</secondary></indexterm>
+<indexterm><primary>mostrar_dados.c</primary><secondary>mostrarFuncionarios</secondary></indexterm>
+<para><computeroutput>void mostrarFuncionarios (const <link linkend="_struct_funcionario">Funcionario</link> funcionarios[], int numFuncionarios)</computeroutput></para><para>
+Definition at line 8 of file mostrar_dados.c.</para>
+    </section><anchor xml:id="_mostrar__dados_8c_1a26fbac556d67f20c34e54199567b1472"/>    <section>
+    <title>RefeicoesPorDia()</title>
+<indexterm><primary>RefeicoesPorDia</primary><secondary>mostrar_dados.c</secondary></indexterm>
+<indexterm><primary>mostrar_dados.c</primary><secondary>RefeicoesPorDia</secondary></indexterm>
+<para><computeroutput>void RefeicoesPorDia (const <link linkend="_struct_funcionario">Funcionario</link> funcionarios[], int numFuncionarios, const <link linkend="_struct_ementa">Ementa</link> ementas[], int numEmentas, const <link linkend="_struct_escolha">Escolha</link> escolhas[], int numEscolhas, const char * diaProcurado)</computeroutput></para><para>
+Definition at line 53 of file mostrar_dados.c.</para>
+</section>
+</section>
+</section>

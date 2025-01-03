@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_uso-example" kind="example">
+    <compoundname>Uso</compoundname>
+    <briefdescription>
+<para>Função principal do programa. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Função principal do programa.Realiza a inicialização do programa, lendo os dados de funcionários, ementas e escolhas a partir de ficheiros, e apresenta as informações para o utilizador.</para>
+<para>As principais etapas do programa são:<itemizedlist>
+<listitem><para>Ler dados de ficheiros</para>
+</listitem><listitem><para>Verificar erros durante a leitura</para>
+</listitem><listitem><para>Mostrar listas detalhadas</para>
+</listitem><listitem><para>Apresentar refeições por dia</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="return"><para>int Retorna 0 se o programa for executado com sucesso, ou 1 em caso de erro.</para>
+</simplesect>
+: O programa espera que os ficheiros estejam organizados como no exemplo:<itemizedlist>
+<listitem><para>Funcionários: &quot;./data/funcionarios.txt&quot;</para>
+</listitem><listitem><para>Ementas: &quot;./data/ementas.txt&quot;</para>
+</listitem><listitem><para>Escolhas: &quot;./data/escolhas.txt&quot; <programlisting filename="Uso"></programlisting> </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="src/main.c"/>
+  </compounddef>
+</doxygen>

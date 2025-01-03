@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_funcionario" xml:lang="en-US">
+<title>Funcionario Struct Reference</title>
+<indexterm><primary>Funcionario</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Header.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_struct_funcionario_1a7441ef0865bcb3db9b8064dd7375c1ea">id</link></para>
+</listitem>
+            <listitem><para>char <link linkend="_struct_funcionario_1aa4e90ca99702bac9e1c78503ad86acba">nome</link> [100]</para>
+</listitem>
+            <listitem><para>char <link linkend="_struct_funcionario_1a2675bd15b21381746dad2f447e841be8">nif</link> [10]</para>
+</listitem>
+            <listitem><para>char <link linkend="_struct_funcionario_1a2b3e6e14a2f6909a2d7c095c16a343c8">telefone</link> [10]</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<simplesect><title>Examples</title><link linkend="__exemplo-example">Exemplo</link>.</simplesect>
+<para>
+Definition at line 5 of file Header.h.</para>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_struct_funcionario_1a7441ef0865bcb3db9b8064dd7375c1ea"/>    <section>
+    <title>id</title>
+<indexterm><primary>id</primary><secondary>Funcionario</secondary></indexterm>
+<indexterm><primary>Funcionario</primary><secondary>id</secondary></indexterm>
+<para><computeroutput>int id</computeroutput></para><para>
+Definition at line 6 of file Header.h.</para>
+    </section><anchor xml:id="_struct_funcionario_1a2675bd15b21381746dad2f447e841be8"/>    <section>
+    <title>nif</title>
+<indexterm><primary>nif</primary><secondary>Funcionario</secondary></indexterm>
+<indexterm><primary>Funcionario</primary><secondary>nif</secondary></indexterm>
+<para><computeroutput>char nif[10]</computeroutput></para><para>
+Definition at line 8 of file Header.h.</para>
+    </section><anchor xml:id="_struct_funcionario_1aa4e90ca99702bac9e1c78503ad86acba"/>    <section>
+    <title>nome</title>
+<indexterm><primary>nome</primary><secondary>Funcionario</secondary></indexterm>
+<indexterm><primary>Funcionario</primary><secondary>nome</secondary></indexterm>
+<para><computeroutput>char nome[100]</computeroutput></para><para>
+Definition at line 7 of file Header.h.</para>
+    </section><anchor xml:id="_struct_funcionario_1a2b3e6e14a2f6909a2d7c095c16a343c8"/>    <section>
+    <title>telefone</title>
+<indexterm><primary>telefone</primary><secondary>Funcionario</secondary></indexterm>
+<indexterm><primary>Funcionario</primary><secondary>telefone</secondary></indexterm>
+<para><computeroutput>char telefone[10]</computeroutput></para><para>
+Definition at line 9 of file Header.h.</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+src/<link linkend="__header_8h">Header.h</link></section>
+</section>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__uso-example" xml:lang="en-US">
+<title>Uso</title>
+
+<para>Função principal do programa.Realiza a inicialização do programa, lendo os dados de funcionários, ementas e escolhas a partir de ficheiros, e apresenta as informações para o utilizador.</para>
+
+<para>As principais etapas do programa são:<itemizedlist>
+<listitem>
+<para>Ler dados de ficheiros</para>
+</listitem><listitem>
+<para>Verificar erros durante a leitura</para>
+</listitem><listitem>
+<para>Mostrar listas detalhadas</para>
+</listitem><listitem>
+<para>Apresentar refeições por dia</para>
+</listitem></itemizedlist>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>int Retorna 0 se o programa for executado com sucesso, ou 1 em caso de erro.</para>
+</formalpara>
+: O programa espera que os ficheiros estejam organizados como no exemplo:<itemizedlist>
+<listitem>
+<para>Funcionários: &quot;./data/funcionarios.txt&quot;</para>
+</listitem><listitem>
+<para>Ementas: &quot;./data/ementas.txt&quot;</para>
+</listitem><listitem>
+<para>Escolhas: &quot;./data/escolhas.txt&quot;</para>
+</listitem></itemizedlist>
+</para>
+
+<para><literallayout><computeroutput></computeroutput></literallayout> </para>
+</section>
